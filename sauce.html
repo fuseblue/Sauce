@@ -674,15 +674,15 @@
                             </ul>
                         </nav>
                     {/block:ifSidebarSocialLinks}
-                    
-                    
+            
                     {block:IfSidebarTextWidget}
                          <div class="text widget cl">
+                            {block:IfSidebarTextWidgetTitle}
+                                <h3>{text:Sidebar Text Widget Title}</h3>
+                            {/block:IfSidebarTextWidgetTitle}
                             <p>{text:Sidebar Text Widget}</p>
                         </div>
                     {/block:IfSidebarTextWidget}
-                    
-        
                     
                     {block:IfInstagramWidgetUserID}
                     <div class="instagram widget cl"> 
@@ -710,16 +710,7 @@
                             <ul id="twitter" class="twitter-feed-widget"></ul>
                         </div>
                     {/block:Twitter}
-            
-                    {block:IfSidebarTextWidget}
-                         <div class="text widget cl">
-                            {block:IfSidebarTextWidgetTitle}
-                                <h3>{text:Sidebar Text Widget Title}</h3>
-                            {/block:IfSidebarTextWidgetTitle}
-                            <p>{text:Sidebar Text Widget}</p>
-                        </div>
-                    {/block:IfSidebarTextWidget}
-                    
+
                     {block:IfSidebarGoogleAdScript}
                          <div class="text widget cl">
                             {text:Sidebar Google Ad Script}
